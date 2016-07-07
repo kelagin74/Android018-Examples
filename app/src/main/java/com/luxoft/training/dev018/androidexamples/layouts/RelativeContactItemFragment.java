@@ -66,7 +66,8 @@ public class RelativeContactItemFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = getView();
+        View v = inflater.inflate(R.layout.fragment_relative_contact_item, container, false);
+
         tvHeaderText = (TextView) v.findViewById(R.id.HeadText);
         tvSmallText =  (TextView) v.findViewById(R.id.SmallText);
         tvTimeText =   (TextView) v.findViewById(R.id.Time);
@@ -75,7 +76,7 @@ public class RelativeContactItemFragment extends Fragment {
         tvSmallText.setText(mSmallText);
         tvTimeText.setText(mTime);
 
-        return inflater.inflate(R.layout.fragment_relative_contact_item, container, false);
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

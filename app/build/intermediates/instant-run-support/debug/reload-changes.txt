@@ -1,3 +1,2 @@
 CHANGED,E:\Docs\Android_traning\Examples\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
 CHANGED,E:\Docs\Android_traning\Examples\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\luxoft\training\dev018\androidexamples\layouts\RelativeContactItemFragment$override.class
-CHANGED,E:\Docs\Android_traning\Examples\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\luxoft\training\dev018\androidexamples\R$id$override.class
