@@ -1,0 +1,2 @@
+CHANGED,E:\Docs\Android_traning\Examples\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\luxoft\training\dev018\androidexamples\R$id.class
+CHANGED,E:\Docs\Android_traning\Examples\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\luxoft\training\dev018\androidexamples\layouts\RelativeContactItemFragment.class

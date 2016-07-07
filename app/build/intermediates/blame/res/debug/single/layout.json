@@ -40,12 +40,12 @@
         "source": "E:\\Docs\\Android_traning\\Examples\\app\\src\\main\\res\\layout\\activity_result_provider.xml"
     },
     {
-        "merged": "E:\\Docs\\Android_traning\\Examples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buttons_block.xml",
-        "source": "E:\\Docs\\Android_traning\\Examples\\app\\src\\main\\res\\layout\\buttons_block.xml"
-    },
-    {
         "merged": "E:\\Docs\\Android_traning\\Examples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "E:\\Docs\\Android_traning\\Examples\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\Docs\\Android_traning\\Examples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buttons_block.xml",
+        "source": "E:\\Docs\\Android_traning\\Examples\\app\\src\\main\\res\\layout\\buttons_block.xml"
     },
     {
         "merged": "E:\\Docs\\Android_traning\\Examples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_margin.xml",

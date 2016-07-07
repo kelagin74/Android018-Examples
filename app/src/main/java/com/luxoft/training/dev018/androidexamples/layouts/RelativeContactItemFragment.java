@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.luxoft.training.dev018.androidexamples.R;
 
@@ -30,6 +31,10 @@ public class RelativeContactItemFragment extends Fragment {
     private String mHeadText;
     private String mSmallText;
     private String mTime;
+
+    TextView tvHeaderText;
+    TextView tvSmallText;
+    TextView tvTimeText;
 
     //private OnFragmentInteractionListener mListener;
 
@@ -61,6 +66,15 @@ public class RelativeContactItemFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View v = getView();
+        tvHeaderText = (TextView) v.findViewById(R.id.HeadText);
+        tvSmallText =  (TextView) v.findViewById(R.id.SmallText);
+        tvTimeText =   (TextView) v.findViewById(R.id.Time);
+
+        tvHeaderText.setText(mHeadText);
+        tvSmallText.setText(mSmallText);
+        tvTimeText.setText(mTime);
+
         return inflater.inflate(R.layout.fragment_relative_contact_item, container, false);
     }
 

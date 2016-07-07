@@ -41,7 +41,7 @@
                 android:text="Head textdggsg dgsd dgsdgs"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
-                android:id="@+id/headText" />
+                android:id="@+id/HeadText" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
                 android:textAlignment="viewEnd"
                 android:layout_gravity="end"
                 android:text="Small Text"
-                android:id="@+id/SomeText" />
+                android:id="@+id/SmallText" />
         </LinearLayout>
 
         <LinearLayout
@@ -65,11 +65,11 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/Time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="time"
                 android:ems="10"
-                android:id="@+id/editText"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/headView"
                 android:layout_gravity="end"

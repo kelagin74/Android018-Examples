@@ -1614,8 +1614,10 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f02004b;
     }
     public static final class id {
-        public static final int SomeText=0x7f0c007a;
+        public static final int HeadText=0x7f0c0079;
+        public static final int SmallText=0x7f0c007a;
         public static final int Sub=0x7f0c006b;
+        public static final int Time=0x7f0c007b;
         public static final int action0=0x7f0c0089;
         public static final int action_bar=0x7f0c0041;
         public static final int action_bar_activity_content=0x7f0c0000;
@@ -1662,7 +1664,6 @@ containing a value of this type.
         public static final int decor_content_parent=0x7f0c003f;
         public static final int default_activity_button=0x7f0c0027;
         public static final int disableHome=0x7f0c000c;
-        public static final int editText=0x7f0c007b;
         public static final int edit_query=0x7f0c0043;
         public static final int end=0x7f0c001a;
         public static final int end_padder=0x7f0c0095;
@@ -1676,7 +1677,6 @@ containing a value of this type.
         public static final int expanded_menu=0x7f0c0038;
         public static final int fragment_container=0x7f0c0066;
         public static final int frameLayout1=0x7f0c007d;
-        public static final int headText=0x7f0c0079;
         public static final int headView=0x7f0c0077;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c000d;
