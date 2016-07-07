@@ -4,20 +4,27 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
 import com.luxoft.training.dev018.androidexamples.calculator.Calculator;
 import com.luxoft.training.dev018.androidexamples.intents.RootIntentsActivity;
 import com.luxoft.training.dev018.androidexamples.layouts.LayoutsExample;
+import com.luxoft.training.dev018.androidexamples.layouts.RelativeExample;
 import com.luxoft.training.dev018.androidexamples.lifecycle.LifecycleExample;
 import com.luxoft.training.dev018.androidexamples.services.ServicesExample;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private DbHelper dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbHelper = new DbHelper(this);
 
         findViewById(R.id.main_open_calculator).setOnClickListener(this);
         findViewById(R.id.main_open_intents).setOnClickListener(this);
@@ -39,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.main_open_layouts: {
-                intent = new Intent(this, LayoutsExample.class);
+                intent = new Intent(this, RelativeExample.class);
                 break;
             }
             case R.id.main_open_lifecycle: {

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luxoft.training.dev018.androidexamples"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:name="com.luxoft.training.dev018.androidexamples.Dev018App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.luxoft.training.dev018.androidexamples.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.luxoft.training.dev018.androidexamples.calculator.Calculator" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.intents.RootIntentsActivity" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.intents.PassDataFirst" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.intents.ResultProviderActivity" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.intents.PassedDataReceiverActivity" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.layouts.LayoutsExample" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.layouts.RelativeExample" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.lifecycle.LifecycleExample" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.lifecycle.LifecycleExample2" />
+        <activity android:name="com.luxoft.training.dev018.androidexamples.services.ServicesExample" />
+        <activity
+            android:name="com.luxoft.training.dev018.androidexamples.browser.BrowserActivity"
+            android:label="MyBrowser" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="http" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.luxoft.training.dev018.androidexamples.services.SimpleIntentService" />
+    </application>
+
+</manifest>

@@ -19,10 +19,15 @@
 
         <activity android:name=".calculator.Calculator"/>
         <activity android:name=".intents.RootIntentsActivity"/>
+        <activity android:name=".intents.PassDataFirst"/>
+        <activity android:name=".intents.ResultProviderActivity"/>
+        <activity android:name=".intents.PassedDataReceiverActivity"/>
         <activity android:name=".layouts.LayoutsExample"/>
+        <activity android:name=".layouts.RelativeExample"/>
         <activity android:name=".lifecycle.LifecycleExample"/>
         <activity android:name=".lifecycle.LifecycleExample2"/>
         <activity android:name=".services.ServicesExample"/>
+
 
         <activity android:label="MyBrowser" android:name=".browser.BrowserActivity">
             <intent-filter>

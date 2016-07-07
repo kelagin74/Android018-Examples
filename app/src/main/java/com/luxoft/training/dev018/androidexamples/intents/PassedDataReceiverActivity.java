@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.luxoft.training.dev018.androidexamples.DbHelper;
 import com.luxoft.training.dev018.androidexamples.R;
+import com.luxoft.training.dev018.androidexamples.network.ApiConstants;
 
 public class PassedDataReceiverActivity extends AppCompatActivity {
     TextView tvView;
@@ -16,12 +18,19 @@ public class PassedDataReceiverActivity extends AppCompatActivity {
         setContentView(R.layout.activity_passed_data_receiver);
 
         tvView = (TextView) findViewById(R.id.tvView);
+        setText();
+    }
 
-        Intent intent = getIntent();
-
-        String fName = intent.getStringExtra("fname");
-        String lName = intent.getStringExtra("lname");
-
-        tvView.setText("Your name is: " + fName + " " + lName);
+    void setText()
+    {
+        DbHelper dbHelper = new DbHelper(this);
+        try {
+            String fName = dbHelper.getVariable(ApiConstants.FIRST_NAME_KEY);
+            String lName = dbHelper.getVariable(ApiConstants.LAST_NAME_KEY);
+            tvView.setText("Your name is: " + fName + " " + lName);
+        } finally {
+            if(null != dbHelper)
+                dbHelper.close();
+        }
     }
 }

@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layouts.RelativeContactItemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SurfaceView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/surfaceView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#d84d4d"
+            android:layout_gravity="left|top"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:id="@+id/headView"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/surfaceView"
+            android:layout_toLeftOf="@+id/timeView"
+            android:background="#389135"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Head textdggsg dgsd dgsdgs"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:id="@+id/headText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAlignment="viewEnd"
+                android:layout_gravity="end"
+                android:text="Small Text"
+                android:id="@+id/SomeText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeView"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/headView"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:text="14:35"/>
+            <SurfaceView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/surfaceView2"
+                android:background="@color/colorAccent"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
